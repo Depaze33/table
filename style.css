@@ -1,0 +1,70 @@
+:root {
+    --border-color: #9a9a9a;
+    --border-color-white: #fff;
+}
+
+.titleTab {
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+
+table {
+    border-collapse: separate; /* Permet de séparer les bordures pour un espacement plus personnalisé */
+    border-spacing: 0px; /* Supprime l'espacement entre les cellules */
+}
+
+
+th, td {
+    padding: 10px; /* Ajuste l'espace intérieur des cellules */
+    text-align: center;
+   border-top: 1px solid var(--border-color); /* Applique une bordure fine pour toutes les cellules */
+   border-left: 1px solid var(--border-color);
+   border-right: 1px solid var(--border-color-white);
+   border-bottom: 1px solid var(--border-color-white);
+}
+
+
+tr:first-of-type th:nth-of-type(2) {
+    font-size: 2em;
+    color: blue;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #F1654C;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FCB941;
+}
+
+tr:nth-child(odd) td:first-child {
+    background-color: #7E3661;
+    color: #fff;
+}
+
+tr:nth-child(even) td:first-child {
+    background-color: #888888;
+    color: #fff;
+}
+
+tr:nth-child(odd) td:last-child {
+    background-color: #8870FF;
+    color: #fff;
+}
+
+th[rowspan]:last-child {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    
+}
+
+.week{
+    border-left: none;
+    border-right: none;
+}
+
+.titleBig{
+    border-right: 1px solid var(--border-color);
+}
